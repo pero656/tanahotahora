@@ -13,8 +13,6 @@
       padding: 0;
       box-sizing: border-box;
     }
-
-    /* Estilos do corpo */
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #1D976C, #93F9B9);
@@ -24,8 +22,6 @@
       align-items: center;
       padding: 20px;
     }
-
-    /* Container principal */
     .container {
       background: #fff;
       width: 100%;
@@ -34,49 +30,45 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       overflow: hidden;
     }
-
-    /* Cabeçalho */
     header {
-      background: #0D6E58; /* tom de verde mais escuro */
+      background: #0D6E58;
       padding: 20px;
       text-align: center;
       color: #fff;
     }
-
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
     header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
       font-weight: 600;
     }
-
     header p {
       font-size: 1.2em;
       font-weight: 300;
       opacity: 0.9;
     }
-
-    /* Conteúdo do formulário */
     .content {
       padding: 30px;
       text-align: center;
     }
-
     .content form {
       margin-top: 20px;
     }
-
     .form-group {
       margin-bottom: 20px;
       text-align: left;
     }
-
     label {
       display: block;
       margin-bottom: 8px;
       font-weight: 500;
       color: #333;
     }
-
     input[type="text"],
     input[type="number"],
     input[type="tel"] {
@@ -87,31 +79,25 @@
       font-size: 1em;
       outline: none;
     }
-
     .radio-group {
       text-align: left;
       margin-bottom: 20px;
     }
-
     .radio-group p {
       margin-bottom: 8px;
       font-weight: 500;
       color: #333;
     }
-
     .radio-group label {
       margin-right: 15px;
       font-weight: 400;
       color: #555;
     }
-
     input[type="radio"] {
       margin-right: 5px;
     }
-
-    /* Botão de envio */
     input[type="submit"] {
-      background: #1D976C; /* cor do degradê principal */
+      background: #1D976C;
       color: #fff;
       border: none;
       padding: 12px 20px;
@@ -122,23 +108,18 @@
       width: 100%;
       max-width: 200px;
     }
-
     input[type="submit"]:hover {
       background: #138358;
     }
-
-    /* Rodapé */
     footer {
       background: #0D6E58;
       padding: 10px;
       text-align: center;
     }
-
     footer p {
       font-size: 0.8em;
       color: #fff;
     }
-
     .criadores {
       font-size: 0.6em; 
       color: #fff; 
@@ -149,8 +130,9 @@
 </head>
 <body>
   <div class="container">
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho com imagem -->
     <header>
+      <img src="foto-cabecalho.jpg" alt="Foto da Confraternização">
       <h1>Formatura 3 Ano A</h1>
       <p>Confraternização de Final de Ano</p>
     </header>
