@@ -3,126 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formatura Escolar 3 Ano A</title>
+  <title>Formatura 3 Ano A</title>
+  <!-- Fonte do Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+    /* Reset básico */
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    /* Estilos do corpo */
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #f6d365, #fda085);
+      background: linear-gradient(135deg, #1D976C, #93F9B9);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 20px;
     }
+
+    /* Container principal */
     .container {
       background: #fff;
+      width: 100%;
+      max-width: 600px;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      padding: 30px;
-      width: 100%;
-      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: #0D6E58; /* tom de verde mais escuro */
+      padding: 20px;
       text-align: center;
+      color: #fff;
     }
-    h1 {
-      font-size: 3em;
-      color: #333;
-      margin-bottom: 20px;
-    }
-    form {
-      width: 100%;
-    }
-    .form-group {
-      text-align: left;
-      margin-bottom: 15px;
-    }
-    label {
-      display: block;
-      margin-bottom: 5px;
-      color: #555;
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
       font-weight: 600;
     }
+
+    header p {
+      font-size: 1.2em;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+
+    /* Conteúdo do formulário */
+    .content {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .content form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #333;
+    }
+
     input[type="text"],
     input[type="number"],
     input[type="tel"] {
       width: 100%;
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #ddd;
       border-radius: 5px;
       font-size: 1em;
+      outline: none;
     }
+
     .radio-group {
       text-align: left;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
+
     .radio-group p {
-      margin-bottom: 5px;
-      font-weight: 600;
-      color: #555;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #333;
     }
+
     .radio-group label {
-      margin-right: 10px;
+      margin-right: 15px;
       font-weight: 400;
       color: #555;
     }
+
     input[type="radio"] {
       margin-right: 5px;
     }
+
+    /* Botão de envio */
     input[type="submit"] {
-      background: #fda085;
+      background: #1D976C; /* cor do degradê principal */
       color: #fff;
       border: none;
       padding: 12px 20px;
-      font-size: 1.1em;
+      font-size: 1em;
       border-radius: 5px;
       cursor: pointer;
       transition: background 0.3s ease;
       width: 100%;
+      max-width: 200px;
     }
+
     input[type="submit"]:hover {
-      background: #f6d365;
+      background: #138358;
     }
+
+    /* Rodapé */
     footer {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #777;
+      background: #0D6E58;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.8em;
+      color: #fff;
+    }
+
+    .criadores {
+      font-size: 0.6em; 
+      color: #fff; 
+      opacity: 0.8;
+      margin-top: 5px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>3 Ano A</h1>
-    <form action="mailto:mattuer4@gmail.com" method="post" enctype="text/plain">
-      <div class="form-group">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-      </div>
-      <div class="form-group">
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
-      </div>
-      <div class="form-group">
-        <label for="whatsapp">WhatsApp:</label>
-        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
-      </div>
-      <div class="radio-group">
-        <p>Você vai na confraternização dos 3 anos no final do ano?</p>
-        <label>
-          <input type="radio" name="confraternizacao" value="Sim" required> Sim
-        </label>
-        <label>
-          <input type="radio" name="confraternizacao" value="Não" required> Não
-        </label>
-      </div>
-      <input type="submit" value="Enviar">
-    </form>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Formatura 3 Ano A</h1>
+      <p>Confraternização de Final de Ano</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+      <form action="mailto:mattuer4@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
+        </div>
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp:</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+        </div>
+        <div class="radio-group">
+          <p>Você vai na confraternização dos 3 anos no final do ano?</p>
+          <label>
+            <input type="radio" name="confraternizacao" value="Sim" required> Sim
+          </label>
+          <label>
+            <input type="radio" name="confraternizacao" value="Não" required> Não
+          </label>
+        </div>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+
+    <!-- Rodapé -->
     <footer>
-      &copy; 2025 Formatura Escolar 3 Ano A
+      <p>&copy; 2025 Formatura Escolar 3 Ano A</p>
+      <p class="criadores">criadores pedro arruda e paulo samuel</p>
     </footer>
   </div>
 </body>
