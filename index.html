@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formatura Escolar 3 Ano A</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      width: 100%;
+    }
+    .form-group {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .radio-group {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .radio-group p {
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #555;
+    }
+    .radio-group label {
+      margin-right: 10px;
+      font-weight: 400;
+      color: #555;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background: #fda085;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background: #f6d365;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>3 Ano A</h1>
+    <form action="mailto:mattuer4@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Sua idade" required>
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(XX) XXXXX-XXXX" required>
+      </div>
+      <div class="radio-group">
+        <p>Você vai na confraternização dos 3 anos no final do ano?</p>
+        <label>
+          <input type="radio" name="confraternizacao" value="Sim" required> Sim
+        </label>
+        <label>
+          <input type="radio" name="confraternizacao" value="Não" required> Não
+        </label>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+    <footer>
+      &copy; 2025 Formatura Escolar 3 Ano A
+    </footer>
+  </div>
+</body>
+</html>
